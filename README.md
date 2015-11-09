@@ -1,2 +1,4 @@
-# Trivial
-Basekit Template
+Trivia
+=========
+
+BaseKit Standard Basetheme
