@@ -1,4 +1,4 @@
-Trivia
+Trivial
 =========
 
 BaseKit Standard Basetheme
