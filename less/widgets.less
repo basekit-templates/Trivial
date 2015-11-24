@@ -106,12 +106,12 @@
 .company-link {
     vertical-align: top;
     @media @tablet {
-        font-size: bkscale(@font-swatch10-font-size,0.8);
-        line-height: bkscale(@font-swatch10-line-height,0.8);
+        font-size: bkscale(@font__companyname--font-size,0.8);
+        line-height: bkscale(@font__companyname--line-height,0.8);
     }
     @media @mobile {
-        font-size: bkscale(@font-swatch10-font-size,0.7);
-        line-height: bkscale(@font-swatch10-line-height,0.7);
+        font-size: bkscale(@font__companyname--font-size,0.7);
+        line-height: bkscale(@font__companyname--line-height,0.7);
     }
 }
 
@@ -180,13 +180,13 @@
     content: "";
     margin-left: 4px;
     border: 5px solid transparent;
-    border-top-color: @color-swatch6;
+    border-top-color: transparent;
 }
 
 // Add Styles to Selected Li
 .extendednavigation li.selected {
     a, .text {
-        color: @font-swatch6-color-hover;
+        color: @color__navigation--text--selected;
     }
 }
 
@@ -279,7 +279,7 @@
 .feature__button { 
     margin: 10px 0 0 0; 
     border: 1px solid @color-swatch1;
-    color: @font-swatch8-color;
+    color: @color__feature-headline--text;
 }
 
 // Default Page Feature
@@ -315,14 +315,14 @@
 
 .imagewidget__image-title,
 .imagewidget__image-description {
-    color: @font-swatch4-color;
+    color: @color__h4--text;
     font-size: @font-swatch4-font-size;
     line-height: @font-swatch4-line-height;
     text-shadow: none;
 }
 
 .imagewidget__image-description {
-    color: @font-swatch5-color;
+    color: @color__p--text;
     font-size: @font-swatch5-font-size;
     line-height: @font-swatch5-line-height;
 }
@@ -368,7 +368,7 @@
         font-size:@font-swatch9-font-size;
         font-weight: @font-swatch9-font-weight;
         line-height:@font-swatch9-line-height;
-        color: @font-swatch9-color;
+        color: @color__feature-strapline--text;
         letter-spacing: @font-swatch9-letter-spacing;
     }
     .image-description {
@@ -376,7 +376,7 @@
         font-size:@font-swatch5-font-size;
         font-weight: @font-swatch5-font-weight;
         line-height:@font-swatch5-line-height;
-        color: @font-swatch9-color;
+        color: @color__feature-strapline--text;
         letter-spacing: @font-swatch5-letter-spacing;
     }
 }
@@ -536,7 +536,7 @@
     margin: 0;
     .image-title, 
     .image-description {
-        color: @font-swatch8-color;
+        color: @color__feature-headline--text;
         text-shadow: none;
     }
     .image-title {
@@ -671,10 +671,13 @@
 
 .responsiveslideshow .pagination-item.selected .button--pagination {
     background-color: @color-swatch3;
-    color: @font-swatch8-color;
 }
 
-
+.responsiveslideshow__next-button, 
+.responsiveslideshow__previous-button, 
+.responsiveslideshow__pause-toggle {
+    background-color: @color-swatch3!important;
+}
 
 
 // -----------------------------
@@ -688,14 +691,14 @@ button, .button {
     padding: 8px 30px;
     background-color: transparent;
     border: 1px solid @color-swatch4;
-    color: @font-swatch7-color;
+    color: @color__button--text;
 }
 
 .feature__button {
     border: 1px solid @color-swatch1;
     background-color: transparent;
     padding: 8px 30px;
-    color: @font-swatch9-color;
+    color: @color__feature-strapline--text;
         margin: 10px 0 0 0; 
     &:hover {
         border: 1px solid transparent;
@@ -721,7 +724,7 @@ button, .button {
 
 .phone-number-link {
     @media @mobile {
-        color: @font-swatch9-color;
+        color: @color__feature-strapline--text;
         background-color: @color-swatch3;
     }
 }
@@ -743,7 +746,6 @@ button, .button {
 .responsiveslideshow__previous-button,
 .responsiveslideshow__pause-toggle {
     background-color: @color-swatch3;
-    color: @font-swatch8-color;
 }
 
 
@@ -828,7 +830,7 @@ input.input[type=search],
 }
 
 .socialicons__social-item a:hover {
-    color: @font-swatch9-color;
+    color: @color__feature-strapline--text;
     text-decoration: none;
 }
 
@@ -837,7 +839,7 @@ input.input[type=search],
     border: 1px solid @color-swatch4;
     padding: 10px;
     display: inline-block;
-        color: @font-swatch4-color;
+    color: @color__h4--text;
 }
 
 
@@ -849,7 +851,7 @@ input.input[type=search],
 
 // Body
 .widget__twitter {
-    background-color: @color-swatch1;
+    background-color: transparent;
     border: 1px solid @color-swatch7;
     padding: 30px 30px 5px;
     @media @tablet {
@@ -918,6 +920,9 @@ input.input[type=search],
 // -----------------------------
 
 .template-footer {
+    form {
+        background-color: @color-swatch1;
+    }
     .twitter {
         background-color: transparent;
         border: 0;
@@ -939,7 +944,7 @@ input.input[type=search],
     }
     .signupform__label {
         padding: 0;
-        color: @font-swatch4-color;
+        color: @color__h4--text;
         font-size: @font-swatch3-font-size;
         &:after {
             margin: 10px auto 10px;
@@ -968,7 +973,7 @@ input.input[type=search],
     input.input[type=email], 
     input.input[type=search], 
     .contact-form__textarea {
-        color: @font-swatch5-color;
+        color: @color__p--text;
     }
 }
 

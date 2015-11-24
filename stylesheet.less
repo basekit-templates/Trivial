@@ -17,7 +17,7 @@
 // 1. #LESS Includes
 // -----------------------------
 
-@import "@{templateCommon}/bk-less-framework.less"; // BaseKit LESS Framework 
+@import "@{templateCommon}/bk-less-framework-v8.less"; // BaseKit LESS Framework
 
 // ** BaseKit LESS Framework is a set of non obtrusive LESS files that can be pulled into 
 //    your template to guarentee widgets come to life. Proivides default styles for all widgets.
@@ -97,7 +97,7 @@
 	padding: 10px 2%;
 	@media @tablet {
 		display: block;
-		padding: 10px 2% 15px;
+		padding: 10px 4% 15px;
 	}
 }
 
@@ -125,7 +125,6 @@
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
     width: 100%;
-    padding-top: 40px;
 }
 
 
@@ -136,8 +135,8 @@
 // -----------------------------
 
 .template-content {
-	width:100%;
-	margin:0px auto;
+	width: 100%;
+	margin: 0px auto;
 	@media @tablet {
 		width:100%;
 	}
@@ -146,3 +145,13 @@
 .widget--zone-widget {
     margin: 0 0 10px;
 }
+
+
+
+
+// -----------------------------
+// 4. #Variables 
+// -----------------------------
+
+//@import "@{templateLocal}/bk-v8-test.less"; 
+@import "@{templateLocal}/less/variables.less"; 

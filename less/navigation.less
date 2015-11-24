@@ -30,13 +30,15 @@
 .navigation-item {
 	@media @tablet {
 		width: 100%;
+        &:last-child {
+            border-bottom: 0;
+        }
 	}
 }
 
-
 // Navigation Link
 .navigation-item .item-name {
-	padding:5px 15px;
+	padding: 5px 15px;
 }
 
 .item-name {
@@ -53,7 +55,7 @@
 
 .navigation-item.folder .navigation__item-name {
 	&:hover {
-		color: @font-swatch4-color;
+		color: @color__h4--text;
 	}
 }
 
@@ -68,11 +70,12 @@
 		-moz-transition: all 0.2s ease;
 		-o-transition: all 0.2s ease;
 		transition: all 0.2s ease;
+        border-top-color: @color-swatch1;
 		@media @tablet {
 			content: "\f054";
 			font-size: 0.8em;
-			height: 31px;
-			margin-top: -2px;
+			 height: 30px;
+            margin-top: -11px;
 		}
 		.navigation-item.open & {
 			@media @tablet {
@@ -91,7 +94,7 @@
 	border: 1px solid @color-swatch7;
     white-space: normal;
 	.navigation__item-name {
-		color:@font-swatch9-color;
+		color:@color__feature-strapline--text;
 	}
 	@media @tablet {
 		position: relative;
