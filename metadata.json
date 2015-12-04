@@ -2,11 +2,6 @@
     "name":"trivial",
     "thumbnail":"trivial.png",
     "screenshot":"trivial-screenshot.jpg",
-    "tags": {
-        "en": ["business", "corporate", "company", "corporation", "professional", "minimal", "clean", "simple"],
-        "es": ["negocios", "corporativo", "empresa", "corporativo", "profesional", "minimalista", "limpio", "simple"],
-        "pt": ["negócio", "corporativo", "companhia", "corporação", "eleição", "profissional", "minimalista", "limpo", "simples"]
-    },
     "pageTypes":["home"],
     "templateType":"standard",
     "widgetVersion":2,
