@@ -104,7 +104,9 @@
 }
 
 .company-link {
-    vertical-align: top;
+    text-transform: uppercase;
+    vertical-align: middle;
+
     @media @tablet {
         font-size: bkscale(@font__companyname--font-size,0.8);
         line-height: bkscale(@font__companyname--line-height,0.8);
@@ -114,6 +116,7 @@
         line-height: bkscale(@font__companyname--line-height,0.7);
     }
 }
+
 
 // Header  Companyname Flexbox
 .header-companyname {
@@ -131,12 +134,12 @@
     -webkit-align-self: auto;
     -ms-flex-item-align: auto;
     align-self: auto;
+
     @media @tablet {
         -webkit-order: 2;
         -ms-flex-order: 2;
         order: 2;
         display:block;
-        margin: 0.5em 0;
         text-align: center;
     }
 }
@@ -207,16 +210,18 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    min-height: 500px;
     display: table;
-    min-height: 500px;
-    height: 500px;
+    height: 600px;
+    min-height: 600px;
     width: 100%;
+
     @media @tablet {
-        min-height: 400px;
+        height: 450px;
+        min-height: 450px;
     }
     @media @mobile {
-        min-height: 200px;
+        height: 350px;
+        min-height: 350px;
     }
 }
 
@@ -588,10 +593,14 @@
     min-height: 400px;
 }
 
-.responsiveslideshow__slideshow-controls, 
+.responsiveslideshow__slideshow-controls,
 .responsiveslideshow__caption {
     text-align: center;
     margin-top: 15px;
+}
+
+.responsiveslideshow .caption {
+    background-color: fade(@color-swatch3, 20%);
 }
 
 
@@ -638,7 +647,7 @@
 // Navigation Buttons
 .slide-navigation {
     position: absolute;
-    top: 180px;
+    top: 34%;
     width: 100%;
 }
 
@@ -685,12 +694,15 @@
 
 .responsiveslideshow .pagination-item.selected .button--pagination {
     background-color: @color-swatch3;
+    color: @color__body--background;
 }
 
-.responsiveslideshow__next-button, 
-.responsiveslideshow__previous-button, 
-.responsiveslideshow__pause-toggle {
-    background-color: @color-swatch3!important;
+.button.responsiveslideshow__next-button,
+.button.responsiveslideshow__previous-button,
+.button.responsiveslideshow__pause-toggle {
+    background-color: fade(@color-swatch3, 20%);
+    border: 0;
+    color: @color__body--background;
 }
 
 
@@ -711,9 +723,10 @@ button, .button {
 .feature__button {
     border: 1px solid @color-swatch1;
     background-color: transparent;
-    padding: 8px 30px;
+    padding: 5px 20px;
     color: @color__feature-strapline--text;
-        margin: 10px 0 0 0; 
+    margin: 10px 0 0 0; 
+
     &:hover {
         border: 1px solid transparent;
     }
@@ -755,12 +768,6 @@ button, .button {
 
 //  8.6 #SLIDESHOW
 //  --------------
-
-.responsiveslideshow__next-button, 
-.responsiveslideshow__previous-button,
-.responsiveslideshow__pause-toggle {
-    background-color: @color-swatch3;
-}
 
 
 
@@ -878,6 +885,10 @@ input.input[type=search],
 
 .tweet-list {
     padding:0;
+}
+
+.tweet-metadata {
+    font-size: 12px;
 }
 
 // Content
