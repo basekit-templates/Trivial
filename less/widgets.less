@@ -291,21 +291,27 @@
 // --------------------------
 
 .page-title {
-    border-bottom: 1px solid @color-swatch7;
-    border-top: 1px solid @color-swatch7;
-    padding: 40px;
+    border-bottom: 1px solid darken(@color__body--background, 9%);
+    border-top: 1px solid darken(@color__body--background, 9%);
+    padding: 20px 2%;
     text-align: center;
-    h1 {
-        padding-bottom: 0;
+
     @media @tablet {
-        font-size: bkscale(@font-swatch1-font-size,0.8);
-        line-height: bkscale(@font-swatch1-line-height,0.9);
-        max-width: 100%;
+        padding: 10px 2%;
     }
-    @media @mobile {
-        font-size: bkscale(@font-swatch1-font-size,0.6);
-        line-height: bkscale(@font-swatch1-line-height,0.7);
-    }
+
+    h1 {
+        .heading--2;
+        padding-bottom: 0;
+        @media @tablet {
+            font-size: bkscale(@font-swatch1-font-size,0.8);
+            line-height: bkscale(@font-swatch1-line-height,0.9);
+            max-width: 100%;
+        }
+        @media @mobile {
+            font-size: bkscale(@font-swatch1-font-size,0.6);
+            line-height: bkscale(@font-swatch1-line-height,0.7);
+        }
     }
 }
 
