@@ -6,9 +6,6 @@
     "templateType":"standard",
     "widgetVersion":2,
     "images":[
-        "images/feature-bg.jpg",
-        "images/feature-default.jpg",
-        "images/logo.png",
         "images/image-1.jpg"
     ],
     "colorSwatches":
@@ -222,9 +219,11 @@
             "font__navigation--letter-spacing" : "@font-swatch6-letter-spacing"
         },
         "feature": {
+            "color__feature-content--background":"@color__primary",
             "color__feature-headline--text": "@font-swatch8-color",
             "color__feature-strapline--text": "@font-swatch9-color",
-            "color__feature-button--text": "@color-swatch1",
+            "color__feature-button--text": "#ffffff",
+            "color__feature-button--border": "#ffffff",
             "color__feature-button--background": "transparent",
             "color__feature-button--background--hover": "@color__primary",
             "font__feature-headline--font-family" : "@font-swatch8-font-family",
