@@ -281,11 +281,20 @@
 // Feature Button
 // ---------------
 
-.feature__button { 
-    margin: 10px 0 0 0; 
-    border: 1px solid @color-swatch1;
+.feature__button {
+    margin-top: 10px;
+    background-color: @color__feature-button--background;
+    border: 1px solid @color__feature-button--border;
     color: @color__feature-headline--text;
+
+    &:hover {
+        background-color: @color__feature-button--background--hover;
+    }
 }
+
+
+
+
 
 // Default Page Title
 // --------------------------
@@ -726,17 +735,6 @@ button, .button {
     color: @color__button--text;
 }
 
-.feature__button {
-    border: 1px solid @color-swatch1;
-    background-color: transparent;
-    padding: 5px 20px;
-    color: @color__feature-strapline--text;
-    margin: 10px 0 0 0; 
-
-    &:hover {
-        border: 1px solid transparent;
-    }
-}
 
 //  8.2  #TWEET
 //  --------------
