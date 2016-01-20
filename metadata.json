@@ -226,6 +226,7 @@
             "color__feature-headline--text": "@font-swatch8-color",
             "color__feature-strapline--text": "@font-swatch9-color",
             "color__feature-button--text": "@color-swatch1",
+            "color__feature-button--border": "@color-swatch1",
             "color__feature-button--background": "transparent",
             "color__feature-button--background--hover": "@color__primary",
             "font__feature-headline--font-family" : "@font-swatch8-font-family",
