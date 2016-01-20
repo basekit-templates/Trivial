@@ -363,11 +363,6 @@
 
 // Image Widget
 
-.imagewidget__image-title {
-    font-size: @font-swatch3-font-size;
-}
-
-
 .imagewidget__image-title,
 .imagewidget__image-description {
     color: @color__h4--text;
@@ -382,6 +377,10 @@
     line-height: @font-swatch5-line-height;
 }
 
+.imagewidget__image-title {
+    font-size: @font-swatch3-font-size;
+    line-height: @font-swatch3-line-height;
+}
 
 
 
@@ -615,6 +614,8 @@
 }
 
 
+
+
 // -----------------------------
 // 7.  #Slideshow
 // ----------------------------- 
@@ -672,10 +673,15 @@
     padding: 0 10%;
 }
 
+.responsiveslideshow__image-title {
+    font-size: @font-swatch3-font-size;
+    line-height: @font-swatch3-line-height;
+}
+
 
 // Slideshow Buttons
 .responsiveslideshow__slide-navigation button {
-        @media @mobile {
+    @media @mobile {
         padding: 4px 12px;
     }
 }
