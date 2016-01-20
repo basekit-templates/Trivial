@@ -74,7 +74,7 @@
 		@media @tablet {
 			content: "\f054";
 			font-size: 0.8em;
-			 height: 30px;
+			height: 33px;
             margin-top: -11px;
 		}
 		.navigation-item.open & {
@@ -209,6 +209,9 @@
         display: none;
         .open & {
             display: block;
+            padding-top: 10px;
+            border-top: 1px solid darken(@color__body--background, 9%);
+            text-align: center;
         }
     }
     .navigation-item {

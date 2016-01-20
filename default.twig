@@ -4,31 +4,20 @@
 
 {% include "includes/header.twig" %}
 <div class="bk-pt-default">
+
 	<div class="page-title">
 		{{widget('pagetitle', 'title', {})|raw}}
 	</div>
-	
-	<!-- Container -->
+
 	<div class="container">
-	
-		<!-- Page Content -->
 		<section class="template-content">
-	
-			<!-- Template Widgets -->
-			
-			<!-- End Template Widgets -->
-	
-			<!-- Main Widet Zone -->
+
 		   	{{zone('main')|raw}}
-	
+
 		</section>
-		<!-- End Page Content -->
-	
 	</div>
-	<!-- End Container -->
 
 </div>
-<!-- End bk-pt-default -->
 
 {% include "includes/footer.twig" %}
 

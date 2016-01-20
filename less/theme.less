@@ -30,6 +30,7 @@
 	background-color: @color-swatch3;
 	text-align: center;
 	color: @color__feature-strapline--text;
+
 	// Change heading elements to white
 	h1, h2, h3, h4 {
 		color: @color__feature-strapline--text;
@@ -39,6 +40,11 @@
 		color: @color__feature-strapline--text;
 		padding: 0;
 	}
+
+    .container {
+        padding-top: 20px;
+    }
+
 	// Reset Twitter feed styles
 	.twitter-feed {
 		padding: 0;
@@ -53,31 +59,18 @@
 // 2. #Typography
 // -----------------------------
 
-// Colour Swatches
-// ---------------
 
-// @color-swatch1: Background 
-// @color-swatch2: Contrast
-// @color-swatch3: Buttons
-// @color-swatch4: Headings
-// @color-swatch5: Paragraph
-// @color-swatch6: Navigation Links
-// @color-swatch7: Spare
+.content p {
+    padding-bottom: 30px;
 
+    @media @mobile {
+        padding-bottom: 20px;
+    }
 
-// Font Swatches
-// -------------
-
-// font1:  Heading 1
-// font2:  Heading 2
-// font3:  Heading 3
-// font4:  Heading 4
-// font5:  Paragraph
-// font6:  Navigation Link
-// font7:  Buttons
-// font8:  Feature Headline
-// font9:  Feature Strapline
-// font10: Company Name (Logo)
+    &:last-child {
+        padding-bottom: 0;
+    }
+}
 
 
 // Standard Text Link
@@ -89,12 +82,16 @@ a { color: @color-swatch2; }
 // Blockquote
 // ----------
 
-blockquote:before {
-	margin-right: 10px;
-	font-size: 32px;
-	color: @color-swatch3;
-    display: inline-block;
-    float: left;
+blockquote {
+    margin-bottom: 10px;
+
+    &:before {
+    	margin-right: 10px;
+    	font-size: 32px;
+    	color: @color-swatch3;
+        display: inline-block;
+        float: left;
+    }
 }
 
 
