@@ -196,6 +196,7 @@
             "color__button--background--hover": "@color__primary",
             "color__button--text": "@font-swatch7-color",
             "color__button--text--hover": "@color-swatch1",
+            "color__button--border": "@color-swatch1",
             "font__button--font-family" : "@font-swatch7-font-family",
             "font__button--font-size" : "@font-swatch7-font-size",
             "font__button--font-weight" : "@font-swatch7-font-weight",
@@ -222,13 +223,8 @@
             "color__feature-content--background":"@color__primary",
             "color__feature-headline--text": "@font-swatch8-color",
             "color__feature-strapline--text": "@font-swatch9-color",
-<<<<<<< HEAD
-            "color__feature-button--text": "@color-swatch1",
-            "color__feature-button--border": "@color-swatch1",
-=======
             "color__feature-button--text": "#ffffff",
             "color__feature-button--border": "#ffffff",
->>>>>>> 95793340883677669712953438298ee2b2f5fd0e
             "color__feature-button--background": "transparent",
             "color__feature-button--background--hover": "@color__primary",
             "font__feature-headline--font-family" : "@font-swatch8-font-family",
