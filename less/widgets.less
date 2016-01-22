@@ -323,11 +323,14 @@
 .page-title {
     border-bottom: 1px solid darken(@color__body--background, 9%);
     border-top: 1px solid darken(@color__body--background, 9%);
-    padding: 20px 2%;
+    padding: 40px 2%;
     text-align: center;
 
     @media @tablet {
-        padding: 10px 2%;
+        padding: 30px;
+    }
+    @media @mobile {
+        padding: 20px;
     }
 
     h1 {
@@ -342,15 +345,6 @@
             font-size: bkscale(@font-swatch1-font-size,0.6);
             line-height: bkscale(@font-swatch1-line-height,0.7);
         }
-    }
-}
-
-.page-title {
-    @media @tablet {
-        padding: 30px!important;
-    }
-    @media @mobile {
-        padding: 20px!important;
     }
 }
 
