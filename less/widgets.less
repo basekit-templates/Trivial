@@ -34,7 +34,6 @@
 // 15.   #FACEBOOK
 // 16.   #YELP
 // 17.   #MAP
-// 18.   #HR LINE
 
 
 
@@ -55,6 +54,8 @@
 [data-name="responsivecolumns"] {
     margin-bottom: 0;
 }
+
+
 
 
 // -----------------------------
@@ -314,9 +315,6 @@
 }
 
 
-
-
-
 // Default Page Title
 // --------------------------
 
@@ -384,6 +382,7 @@
     font-size: @font-swatch3-font-size;
     line-height: @font-swatch3-line-height;
 }
+
 
 
 
@@ -812,6 +811,7 @@ button, .button {
 
 
 
+
 // -----------------------------
 // 9.  #Contact Form
 // -----------------------------
@@ -971,12 +971,13 @@ input.input[type=search],
 
 
 
-
 // -----------------------------
 // 13.  #Divider (Keyline)
 // -----------------------------
 
-// Add styles here...
+hr.rule {
+    background-color: @color-swatch7;
+}
 
 
 
@@ -1071,21 +1072,11 @@ input.input[type=search],
 
 
 
+
 // -----------------------------
 // 17. #Map
 // -----------------------------
 
 .bk-map.map.widget__map {
     height: initial;
-}
-
-
-
-
-// -----------------------------
-// 18. #Hr Line
-// -----------------------------
-
-hr.rule {
-    background-color: @color-swatch7;
 }

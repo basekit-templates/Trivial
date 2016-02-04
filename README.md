@@ -1,4 +1,4 @@
 Trivial
 =========
 
-BaseKit Standard Basetheme
+BaseKit V8 Template
