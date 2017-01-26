@@ -850,39 +850,37 @@ input.input[type=search],
 }
 
 // Advanced Form
-.widget__advancedcontactform {
-    text-align: center;
-}
 
 .advancedcontactform__fieldset {
     margin: 0px auto;
     display: table;
     width: 70%;
-    text-align: center;
 }
 
-.option-item--radio, 
-.option-item--checkbox {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: -ms-flex;
-    display: flex;
-    webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    margin-bottom: 8px;
+.advancedcontactform {
+    input[type="email"],
+    input[type="email"] {
+        padding: 6px 0;
+    }
+    form, .form {
+        text-align: left;
+    }
+    .form-body {
+        @media @mobile {
+            margin: 0;
+        }
+    }
 }
 
+.advancedcontactform__legend:after {
+    margin: 20px 0 15px;
+}
 
+.advancedcontactform__fieldset {
+    @media @mobile {
+        width: 90%;
+    }
+}
 
 
 // -----------------------------
