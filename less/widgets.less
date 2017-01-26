@@ -850,17 +850,14 @@ input.input[type=search],
 }
 
 // Advanced Form
-.widget__advancedcontactform {
-    text-align: center;
-}
 
 .advancedcontactform__fieldset {
     margin: 0px auto;
     display: table;
     width: 70%;
-    text-align: center;
 }
 
+<<<<<<< HEAD
 .option-item--radio, 
 .option-item--checkbox {
     display: -webkit-flex;
@@ -883,9 +880,32 @@ input.input[type=search],
     margin-bottom: 8px;
     display: inline-block;
     margin-right: 20px;
+=======
+.advancedcontactform {
+    input[type="email"],
+    input[type="email"] {
+        padding: 6px 0;
+    }
+    form, .form {
+        text-align: left;
+    }
+    .form-body {
+        @media @mobile {
+            margin: 0;
+        }
+    }
+>>>>>>> c78e5cb14ffe5770a6b4983db7f789aa4ccc7d5a
 }
 
+.advancedcontactform__legend:after {
+    margin: 20px 0 15px;
+}
 
+.advancedcontactform__fieldset {
+    @media @mobile {
+        width: 90%;
+    }
+}
 
 
 // -----------------------------
