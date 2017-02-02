@@ -241,13 +241,13 @@
             "font__feature-strapline--letter-spacing" : "@font-swatch9-letter-spacing"
         },
         "image": {
-            "color__image-title--text": "#ffffff",
-            "color__image-description--text":"#ffffff"
+            "color__image-title--text": "@color-swatch3",
+            "color__image-description--text":"@color-swatch3"
         },
         "slideshow": {
             "color__slideshow-caption--background": "fade(@color-swatch3, 20%)",
-            "color__slideshow-title--text" : "@color-swatch3",
-            "color__slideshow-description--text" : "@color-swatch3"
+            "color__slideshow-title--text" : "#ffffff",
+            "color__slideshow-description--text" : "#ffffff"
         },
         "forms": {
             "color__form--background": "transparent",
