@@ -240,6 +240,15 @@
             "font__feature-strapline--line-height" : "@font-swatch9-line-height",
             "font__feature-strapline--letter-spacing" : "@font-swatch9-letter-spacing"
         },
+        "image": {
+            "color__image-title--text": "#ffffff",
+            "color__image-description--text":"#ffffff"
+        },
+        "slideshow": {
+            "color__slideshow-caption--background": "fade(@color-swatch3, 20%)",
+            "color__slideshow-title--text" : "@color-swatch3",
+            "color__slideshow-description--text" : "@color-swatch3"
+        },
         "forms": {
             "color__form--background": "transparent",
             "color__form-legend--text": "@color-swatch4",
