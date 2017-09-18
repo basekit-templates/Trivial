@@ -115,6 +115,22 @@
 }
 
 
+[data-widget-type="extendednavigation"] {
+
+    @media @tablet {
+
+        .widget-overlay {
+            display: none;
+        }
+
+        .open + .widget-overlay {
+            display: block;
+            top: 50px;
+        }
+    }
+}
+
+
 // Burger Icon
 // -------------
 
