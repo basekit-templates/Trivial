@@ -139,6 +139,10 @@
 }
 
 @media @tablet {
+    .navigation-toggle,
+    .navigation-toggle:hover {
+        background-color: @color__navigation--text;
+    }
     .navigation-toggle {
         display: block;
         overflow: hidden;
@@ -146,8 +150,7 @@
         height: 45px;
         text-indent: -9999px;
         line-height: 0;
-        -webkit-border-radius: 0;
-        -moz-border-radius: 0;
+        margin-top: 10px;
         border-radius: 0;
         outline: 0;
         border: 0;
@@ -161,8 +164,8 @@
             right: 0;
             margin-top: 15px;
             margin-left: -13px;
-            background: @color-swatch3;
-            box-shadow: 0 6px 0 @color-swatch3;
+            background: contrast(@color__navigation--text, black, white);
+            box-shadow: 0 6px 0 contrast(@color__navigation--text, black, white);
             .transition( all, 0.5s, ease );
         }
         &:after {
@@ -175,28 +178,15 @@
             right: 0;
             margin-top: 15px;
             margin-left: -13px;
-            background: @color-swatch3;
+            background: contrast(@color__navigation--text, black, white);
             .transition( all, 0.5s, ease );
         }
-    }
-    .navigation-toggle:hover {
-        background-color: @color-swatch1;
-        border: 0;
-            &:before {
-                background: @color-swatch3;
-                box-shadow: 0 6px 0 @color-swatch3;
-            }
-            &:after {
-                background: @color-swatch3;
-            }
     }
     // Toggle Button Open State
     .open & {
         &.navigation-toggle {
-            background-color: @color-swatch1;
             &:before {
                 margin-top: 21px;
-                background: @color-swatch3;
                 box-shadow: none;
                 -webkit-transform: rotate(45deg);
                 -moz-transform: rotate(45deg);
@@ -215,7 +205,6 @@
                 right: 0;
                 margin-top: 21px;
                 margin-left: -13px;
-                background: @color-swatch3;
                 box-shadow: none;
                 -webkit-transform: rotate(-45deg);
                 -moz-transform: rotate(-45deg);
@@ -231,7 +220,6 @@
         .open & {
             display: block;
             padding-top: 10px;
-            border-top: 1px solid darken(@color__body--background, 9%);
             text-align: center;
         }
     }
