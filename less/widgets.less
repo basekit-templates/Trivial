@@ -346,10 +346,17 @@
     }
 }
 
-// Makes hidden content icon visible
-[data-widget-type="pagetitle"] .widget-overlay .widget__list {
+// Makes hidden content icon visible in V8
+body:not(.supports-rows) [data-widget-type="pagetitle"] .widget-overlay .widget__list {
     float: right;
 }
+
+// Makes hidden content icon visible in V10
+.supports-rows [data-widget-type="pagetitle"] .widget__item--visibility {
+    left: 0;
+    right: initial;
+}
+
 
 
 
